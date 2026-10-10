@@ -1,0 +1,48 @@
+{
+  "desktop": {
+    "boot": {
+      "bootDuration": "1502.1",
+      "bootReason": "ready",
+      "bootState": "complete"
+    },
+    "chapter": "#intro",
+    "homeName": "Sentinel-IoT home",
+    "logo": {
+      "display": "block",
+      "height": 28,
+      "width": 42
+    },
+    "sceneReady": true
+  },
+  "mobile": {
+    "brandRight": 153.92709350585938,
+    "height": 568,
+    "logo": {
+      "display": "block",
+      "height": 19,
+      "width": 28
+    },
+    "navLeft": 204.7916717529297,
+    "overflow": false,
+    "width": 320
+  },
+  "mediumPhone": {
+    "brandRight": 177.42709350585938,
+    "navLeft": 208.11459350585935,
+    "navRight": 379.3333435058594,
+    "overflow": false,
+    "width": 401
+  },
+  "replay": {
+    "duration": "1071.5",
+    "open": false,
+    "readerTop": 4684,
+    "y": 0,
+    "saved": {
+      "footerLogoWidth": 36,
+      "readerTop": 4684,
+      "y": 0
+    }
+  },
+  "consoleErrors": []
+}

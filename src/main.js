@@ -5,6 +5,7 @@ import './story-motion.css';
 import './downloads.css';
 import './story-background.css';
 import './splash.css';
+import './brand.css';
 import { createTextMotion } from './text-motion.js';
 import { createComponentGuide } from './component-guide.js';
 import { createStoryScroll } from './story-scroll.js';

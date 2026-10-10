@@ -1,6 +1,6 @@
 # Sentinel-IoT automatic loading screen
 
-The branded shield, orbit ring, title, and loading track appear from the initial
+The branded eye, orbit ring, title, and loading track appear from the initial
 HTML response. Critical inline styles hide the story from the first paint while
 keeping the existing model stage mounted and measurable. The story loads behind
 the splash; its framing and model size are unchanged.
@@ -24,7 +24,7 @@ and reading position. Scrolling is locked while the native dialog is open.
 Reduced motion and the pause setting use a still introduction and instant exit.
 Returning from the browser back-forward cache checks the absolute deadline.
 
-The first-paint gate and shield are in `index.html`; additional welcome styles
+The first-paint gate and eye placements are in `index.html`; additional welcome styles
 are in `src/splash.css`; finite Anime.js transitions and readiness are in
 `src/splash.js`; build-time style embedding is in `vite.config.js`.
 `docs/verify-startup-server.mjs` serves the actual production build locally for

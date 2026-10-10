@@ -23,14 +23,13 @@ export function createSplash({root,replayButton,reducedMotion,onToggle=()=>{}}){
   function run(target,options){const effect=animate(target,options);effects.add(effect);return effect;}
   function reveal(){
     stopEffects();
-    // The initial shield and loading track animate from the first paint. Keep
+    // The initial eye and loading track animate from the first paint. Keep
     // their wordmark readable while the module adopts the loading screen.
     if(isInitial||still())return;
     run(root.querySelectorAll('[data-splash-reveal]'),{opacity:[0,1],translateY:[14,0],filter:['blur(6px)','blur(0px)'],delay:stagger(40,{start:40}),duration:430,ease:'out(3)'});
     run(root.querySelectorAll('.splash-letter'),{opacity:[0,1],translateY:[28,0],rotateX:[-65,0],delay:stagger(22,{start:60}),duration:560,ease:'out(4)'});
     run(root.querySelectorAll('.splash-phase-line'),{scaleX:[0,1],delay:stagger(80,{start:180}),duration:460,ease:'out(3)'});
-    const path=root.querySelector('.splash-emblem-outline'),length=path.getTotalLength();
-    run(path,{strokeDasharray:length,strokeDashoffset:[length,0],duration:700,ease:'inOut(3)'});
+    run(root.querySelector('.splash-emblem'),{opacity:[0,1],scale:[.88,1],duration:650,ease:'out(3)'});
   }
   function clearTimers(){clearTimeout(hardTimer);clearTimeout(readyTimer);hardTimer=readyTimer=0;}
   function scheduleReady(){
