@@ -1,0 +1,65 @@
+.download-section{display:block}
+.download-options{display:none;pointer-events:auto}
+.is-downloads .download-options{display:block}
+.download-card{--package-color:#b3df93;position:fixed;width:22vw;max-width:320px;padding:20px;border:1px solid var(--line);border-top:2px solid var(--package-color);background:var(--bg);z-index:7}
+.download-host{left:var(--corner-space);top:calc(50% - 44px)}
+.download-client{--package-color:#c0b5ff;right:var(--corner-space);top:calc(50% - 44px)}
+.download-dashboard{--package-color:#ff7768;left:50%;top:calc(50% + min(25svh,230px));transform:translateX(-50%);width:26vw;max-width:350px}
+.download-card .tiny-dot{background:var(--package-color)}
+.download-card h3{font-size:20px;font-weight:500;letter-spacing:-.03em;margin-top:9px}
+.download-description{font-size:11px;line-height:1.6;color:var(--muted);margin-top:9px}
+.download-card .button{display:flex;width:100%;min-height:44px;justify-content:space-between;gap:12px;margin-top:16px;padding:12px 14px;border:1px solid var(--package-color);background:transparent;color:var(--package-color);font-size:10px}
+.download-card .button:hover,.download-card .button:focus-visible{background:color-mix(in srgb,var(--package-color) 10%,var(--bg))}
+.download-card .button:disabled{cursor:default;opacity:.65}
+.download-card [hidden]{display:none!important}
+.download-card .download-extension{font:9px var(--mono);letter-spacing:.07em}
+.download-file-status{font:9px/1.6 var(--mono);color:var(--muted);margin-top:9px}
+.download-leaders{position:fixed;inset:0;width:100%;height:100svh;z-index:5;pointer-events:none;overflow:visible}
+.download-leader{fill:none;stroke-width:1;opacity:.6;vector-effect:non-scaling-stroke}
+.download-endpoint{opacity:.8}
+.is-downloads .component-callouts,.is-downloads .component-leaders{visibility:hidden}
+@media(max-width:1100px) and (min-width:801px){
+  .download-card{padding:14px}
+  .download-card h3{font-size:18px}
+  .download-description{font-size:10px}
+}
+@media(max-height:650px) and (min-width:801px){
+  .download-card{padding:12px}
+  .download-description{display:none}
+  .download-card h3{font-size:16px;margin-top:6px}
+  .download-card .button{margin-top:10px;padding:10px;font-size:9px}
+  .download-dashboard{top:calc(50% + 24svh)}
+}
+@media(max-height:450px){
+  .download-intro .eyebrow{font-size:8px}
+  .download-intro h2{font-size:clamp(18px,2.9vw,25px);white-space:nowrap}
+  .download-intro h2 br{display:none}
+  .download-intro .chapter-description{display:none}
+  .download-card{padding:10px}
+  .download-card h3,.download-description{display:none}
+  .download-card .eyebrow{font-size:8px}
+  .download-card .button{margin-top:8px;min-height:40px;padding:8px;font-size:8px}
+  .download-card .download-file-status{font-size:8px;margin-top:5px}
+  .download-host,.download-client{top:50%}
+  .download-dashboard{top:calc(50% + 28svh)}
+  .download-dashboard>.eyebrow{display:none}
+  .download-dashboard .button{margin-top:0}
+}
+@media(max-width:800px) and (min-height:451px){
+  .download-options,.is-downloads .download-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+  .download-card{position:static;width:auto;max-width:none;padding:12px;transform:none;z-index:auto}
+  .download-card .eyebrow{font-size:8px}
+  .download-card h3{font-size:15px;margin-top:5px}
+  .download-description{display:none}
+  .download-card .button{margin-top:10px;font-size:9px;min-height:42px;padding:9px}
+  .download-file-status{font-size:8px;margin-top:6px}
+  .download-dashboard{grid-column:1/-1}
+  .download-dashboard h3{display:none}
+  .download-intro h2{font-size:26px}
+  .download-intro h2 br{display:none}
+  .download-intro .chapter-description{margin-top:10px}
+  .download-intro>.eyebrow{font-size:8px;margin-bottom:12px}
+  .site-header nav a[href="#team"]{display:none}
+  .download-leaders{z-index:4}
+}
+@media(max-width:400px){.site-header nav a[href="#network"]{display:none}}

@@ -1,0 +1,657 @@
+{
+  "date": "2026-10-09",
+  "chapters": [
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "0",
+      "form": "Sentinel core",
+      "labels": [
+        {
+          "id": "core",
+          "visible": true
+        },
+        {
+          "id": "beacon",
+          "visible": true
+        },
+        {
+          "id": "arcs",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "1",
+      "form": "Connected constellation",
+      "labels": [
+        {
+          "id": "network",
+          "visible": true
+        },
+        {
+          "id": "paths",
+          "visible": true
+        },
+        {
+          "id": "packets",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "2",
+      "form": "Disrupted spiral",
+      "labels": [
+        {
+          "id": "modbus",
+          "visible": true
+        },
+        {
+          "id": "threat",
+          "visible": true
+        },
+        {
+          "id": "paths",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "3",
+      "form": "Conformer tower",
+      "labels": [
+        {
+          "id": "input",
+          "visible": true
+        },
+        {
+          "id": "convolution",
+          "visible": true
+        },
+        {
+          "id": "attention",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "4",
+      "form": "Feature landscape",
+      "labels": [
+        {
+          "id": "saliency",
+          "visible": true
+        },
+        {
+          "id": "prediction",
+          "visible": true
+        },
+        {
+          "id": "network",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "5",
+      "form": "Containment shield",
+      "labels": [
+        {
+          "id": "shield",
+          "visible": true
+        },
+        {
+          "id": "threat",
+          "visible": true
+        },
+        {
+          "id": "modbus",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "6",
+      "form": "Evidence folio",
+      "labels": [
+        {
+          "id": "evidence",
+          "visible": true
+        },
+        {
+          "id": "base",
+          "visible": true
+        },
+        {
+          "id": "paths",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "7",
+      "form": "Connected architecture",
+      "labels": [
+        {
+          "id": "input",
+          "visible": true
+        },
+        {
+          "id": "attention",
+          "visible": true
+        },
+        {
+          "id": "prediction",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "8",
+      "form": "Sentinel signature",
+      "labels": [
+        {
+          "id": "core",
+          "visible": true
+        },
+        {
+          "id": "lid",
+          "visible": true
+        },
+        {
+          "id": "pins",
+          "visible": true
+        }
+      ],
+      "leaders": 3
+    }
+  ],
+  "catalogue": [
+    {
+      "description": "This assembly illustrates Sentinel’s software detection pipeline. Its chip-like appearance is a visual metaphor for the research system.",
+      "highlight": true,
+      "selected": "core",
+      "title": "Sentinel core",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The glowing diamond gives the software’s prediction a visible focal point. Its light and movement are storytelling effects.",
+      "highlight": true,
+      "selected": "beacon",
+      "title": "Decision beacon",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The input stage maps feature sequences into the representation used by the model. Each sequence contains ten time steps.",
+      "highlight": true,
+      "selected": "input",
+      "title": "Input projection",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "Convolution captures nearby changes within a feature sequence. This plate illustrates that stage of the Conformer architecture.",
+      "highlight": true,
+      "selected": "convolution",
+      "title": "Convolution",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "Self-attention relates events across the sequence to provide temporal context. The separated plate makes that processing stage visible.",
+      "highlight": true,
+      "selected": "attention",
+      "title": "Self-attention",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "Two prediction heads produce a binary anomaly decision and a forensic attack classification. One visual plate represents both outputs.",
+      "highlight": true,
+      "selected": "prediction",
+      "title": "Prediction heads",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The rising bars illustrate gradient saliency: input features that influence a prediction. Their heights are illustrative; real attributions depend on the input.",
+      "highlight": false,
+      "selected": "saliency",
+      "title": "Feature influence",
+      "visibility": "This part appears in the explanation chapter."
+    },
+    {
+      "description": "The record symbol illustrates the link between an alert, its explanation and the proposed response. The research prototype supports audit records for review.",
+      "highlight": false,
+      "selected": "evidence",
+      "title": "Audit record",
+      "visibility": "This part appears in the evidence chapter."
+    },
+    {
+      "description": "This node represents network-traffic records from the TON_IoT research dataset. The portfolio shows an illustrated source, rather than a live network feed.",
+      "highlight": true,
+      "selected": "network",
+      "title": "Network traffic",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the Fridge sensor domain in TON_IoT. It is one of seven IoT sources illustrated around the core.",
+      "highlight": true,
+      "selected": "fridge",
+      "title": "Fridge sensor",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the GPS_Tracker domain in TON_IoT. Its movement in the scene is part of the visual story.",
+      "highlight": true,
+      "selected": "gps",
+      "title": "GPS tracker",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the Garage_Door sensor domain in TON_IoT. The model places this source alongside other IoT telemetry.",
+      "highlight": true,
+      "selected": "garage",
+      "title": "Garage door",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the Modbus domain in TON_IoT. The intrusion chapter highlights it in a simulated incident.",
+      "highlight": true,
+      "selected": "modbus",
+      "title": "Modbus telemetry",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the Motion_Light sensor domain in TON_IoT. It illustrates a separate source entering the shared analysis pipeline.",
+      "highlight": true,
+      "selected": "motion",
+      "title": "Motion light",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the Thermostat sensor domain in TON_IoT. Its connecting path illustrates how sensor records reach the core.",
+      "highlight": true,
+      "selected": "thermostat",
+      "title": "Thermostat",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents the Weather sensor domain in TON_IoT. It completes the seven illustrated IoT sources.",
+      "highlight": true,
+      "selected": "weather",
+      "title": "Weather sensor",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents Linux_Disk host records in TON_IoT. Host activity adds another view alongside network and sensor data.",
+      "highlight": true,
+      "selected": "linux-disk",
+      "title": "Linux disk",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents Linux_Memory host records in TON_IoT. It is one of five host domains included in the research pipeline.",
+      "highlight": true,
+      "selected": "linux-memory",
+      "title": "Linux memory",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents Linux_Process host records in TON_IoT. It illustrates the process-activity source within the host group.",
+      "highlight": true,
+      "selected": "linux-process",
+      "title": "Linux processes",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents Windows_7 host records in TON_IoT. The label identifies a dataset domain used by the research prototype.",
+      "highlight": true,
+      "selected": "windows-7",
+      "title": "Windows 7 host",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "This node represents Windows_10 host records in TON_IoT. Together, the host nodes complete the thirteen illustrated telemetry domains.",
+      "highlight": true,
+      "selected": "windows-10",
+      "title": "Windows 10 host",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The thin lines connect telemetry sources to the processing assembly. They illustrate data flow through the software pipeline.",
+      "highlight": true,
+      "selected": "paths",
+      "title": "Signal paths",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The moving points help you follow signals toward the core. Their timing is animated for the story and does not show live packet traffic.",
+      "highlight": true,
+      "selected": "packets",
+      "title": "Travelling signals",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The base visually supports the processing layers as the model transforms. It is a decorative part of this 3D teaching model.",
+      "highlight": true,
+      "selected": "base",
+      "title": "Core foundation",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The casing opens and moves to make the processing story easier to follow. Its geometry is a visual design element.",
+      "highlight": true,
+      "selected": "lid",
+      "title": "Processor casing",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "These gold pins complete the processor silhouette. They are decorative and do not represent physical interfaces used by the prototype.",
+      "highlight": true,
+      "selected": "pins",
+      "title": "Connection pins",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "Seven light arcs rearrange into an orbit, helix, shield and evidence frame. These shapes visually connect the chapters.",
+      "highlight": true,
+      "selected": "arcs",
+      "title": "Transforming arcs",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The intersecting rings illustrate how the model considers a sequence of events. They are a visual metaphor for context across ten time steps.",
+      "highlight": true,
+      "selected": "context",
+      "title": "Context rings",
+      "visibility": "Highlighted on the model."
+    },
+    {
+      "description": "The red marker introduces unexpected activity at an industrial node. This animation is a demonstration; no attack is sent to a network.",
+      "highlight": false,
+      "selected": "threat",
+      "title": "Illustrative threat",
+      "visibility": "This part appears in the intrusion chapter."
+    },
+    {
+      "description": "The wireframe boundary visualizes a proposed containment response. Actions in this portfolio are simulated and do not isolate real devices.",
+      "highlight": false,
+      "selected": "shield",
+      "title": "Containment boundary",
+      "visibility": "This part appears in the response chapter."
+    }
+  ],
+  "jump": {
+    "chapter": "4",
+    "highlight": true,
+    "panelVisible": true,
+    "selected": "saliency",
+    "visibility": "Highlighted on the model."
+  },
+  "escape": {
+    "closed": true,
+    "focus": "component-guide-toggle text-motion-ready"
+  },
+  "explorer": {
+    "canvas": {
+      "bottom": 900,
+      "height": 900,
+      "left": 0,
+      "right": 1425,
+      "top": 0,
+      "width": 1425,
+      "x": 0,
+      "y": 0
+    },
+    "description": "Self-attention relates events across the sequence to provide temporal context. The separated plate makes that processing stage visible.",
+    "highlight": true,
+    "open": true,
+    "selected": "attention",
+    "targetX": "768.0384084452372",
+    "beforeTargetX": "772.6726139695071"
+  },
+  "explorerJump": {
+    "dialogClosed": true,
+    "focus": "component-title",
+    "highlight": true,
+    "panelOpen": true,
+    "selected": "shield"
+  },
+  "mobile": {
+    "canvas": {
+      "bottom": 844,
+      "height": 844,
+      "left": 0,
+      "right": 390,
+      "top": 0,
+      "width": 390,
+      "x": 0,
+      "y": 0
+    },
+    "panel": {
+      "bottom": 844,
+      "height": 248.09375,
+      "left": 0,
+      "right": 390,
+      "top": 595.90625,
+      "width": 390,
+      "x": 0,
+      "y": 595.90625
+    },
+    "panelScroll": 152,
+    "readerTop": 595.90625,
+    "selected": "attention",
+    "storyScroll": 1212,
+    "viewport": [
+      390,
+      844
+    ],
+    "storyBeforeGuideScroll": 1212
+  },
+  "compact": {
+    "canvas": {
+      "bottom": 612,
+      "height": 612,
+      "left": 0,
+      "right": 424,
+      "top": 0,
+      "width": 424,
+      "x": 0,
+      "y": 0
+    },
+    "overflow": false,
+    "panel": {
+      "bottom": 612,
+      "height": 173.84375,
+      "left": 0,
+      "right": 424,
+      "top": 438.15625,
+      "width": 424,
+      "x": 0,
+      "y": 438.15625
+    },
+    "readerTop": 438.15625,
+    "viewport": [
+      424,
+      612
+    ]
+  },
+  "landscape": {
+    "canvas": {
+      "bottom": 390,
+      "height": 390,
+      "left": 0,
+      "right": 725,
+      "top": 0,
+      "width": 725,
+      "x": 0,
+      "y": 0
+    },
+    "labels": [
+      {
+        "bottom": 224,
+        "height": 44,
+        "left": 540.1875,
+        "right": 699.984375,
+        "top": 180,
+        "width": 159.796875,
+        "x": 540.1875,
+        "y": 180
+      },
+      {
+        "bottom": 274,
+        "height": 44,
+        "left": 540.1875,
+        "right": 699.984375,
+        "top": 230,
+        "width": 159.796875,
+        "x": 540.1875,
+        "y": 230
+      },
+      {
+        "bottom": 324,
+        "height": 44,
+        "left": 540.1875,
+        "right": 699.984375,
+        "top": 280,
+        "width": 159.796875,
+        "x": 540.1875,
+        "y": 280
+      }
+    ],
+    "overflow": false,
+    "viewport": [
+      740,
+      390
+    ]
+  },
+  "calloutFocus": {
+    "closed": true,
+    "returnedTo": "Inspect Decision beacon"
+  },
+  "closedLayerHint": "Open the detection chapter to see this layer clearly.",
+  "openLayerHint": "Highlighted on the model.",
+  "introLayout": {
+    "credit": {
+      "bottom": 790,
+      "height": 51.59375,
+      "left": 1270.734375,
+      "right": 1381.8125,
+      "top": 738.40625,
+      "width": 111.078125,
+      "x": 1270.734375,
+      "y": 738.40625
+    },
+    "label": {
+      "bottom": 733.25,
+      "height": 63.25,
+      "left": 1051.1875,
+      "right": 1361.1875,
+      "top": 670,
+      "width": 310,
+      "x": 1051.1875,
+      "y": 670
+    },
+    "overlap": false
+  },
+  "build": "npm run build passed",
+  "originalFiles": {
+    "checked": 31638,
+    "missing": 0,
+    "changed": 0
+  }
+}

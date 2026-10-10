@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-09",
+  "result": "passed",
+  "storyForms": 9,
+  "sharedTelemetryNodes": 13,
+  "sharedProcessorLayers": 4,
+  "sharedLightArcs": 7,
+  "checks": {
+    "productionBuild": "passed",
+    "independentSourceReview": "passed",
+    "generatedPointsFinite": 2952,
+    "arcBufferFloats": 945,
+    "arcBufferVertices": 315,
+    "timelineBoundaryPoses": "all forms 0 through 8 at 1000 ms intervals",
+    "continuousScroll": "intermediate form 1.811 at scroll position 1532",
+    "reverseScroll": "returned to form 1.000 at scroll position 900",
+    "pausedMotion": "still chapter poses",
+    "desktopViewport": "1440 x 900",
+    "mobileViewport": "390 x 844",
+    "mobileSystemAndTeam": "visible in reserved space; no horizontal overflow",
+    "mobileModelGapAfterContentPixels": 28,
+    "explorer": "rotate, open layers, reset and close passed; one canvas retained",
+    "finalReload": "no new runtime errors"
+  },
+  "originalFiles": {
+    "checked": 31638,
+    "missing": 0,
+    "changedSizeOrWriteTime": 0
+  },
+  "screenshots": [
+    "preview-transform-tower.jpg",
+    "preview-transform-shield.jpg",
+    "preview-transform-mobile-team.jpg"
+  ]
+}

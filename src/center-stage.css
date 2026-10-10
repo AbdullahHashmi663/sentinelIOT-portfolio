@@ -1,0 +1,121 @@
+/* A centered 3D stage with a corner HUD and a clear reading column. */
+:root{--stage-header:86px;--corner-space:clamp(22px,3vw,52px);--reading-column:25vw;--model-framing-width:44vw;--model-framing-height:76svh}
+body::before{background:radial-gradient(ellipse at 50% 50%,#38382e55,transparent 65%)}
+.scene-stage,.is-model-view .scene-stage{position:fixed;inset:0;width:100%;height:100svh;z-index:4;background:transparent;border:0;opacity:1;pointer-events:none}
+#scene-mount{inset:0;left:0;top:0;width:100%;height:100%;transform:none}
+.scene-framing{position:absolute;left:50%;top:50%;width:var(--model-framing-width);height:var(--model-framing-height);visibility:hidden;pointer-events:none;transform:translate(-50%,-50%)}
+.model-label,.scene-caption{max-width:26vw;font-size:9px;line-height:1.6;white-space:normal;background:var(--bg);box-shadow:0 0 16px 12px var(--bg)}
+.label-top{top:calc(var(--stage-header) + 22px);left:var(--corner-space)}
+.label-left{display:flex;top:calc(var(--stage-header) + 22px);right:var(--corner-space);left:auto;flex-direction:row;align-items:center;text-align:right}
+.label-left .label-line{display:none}
+.label-bottom{bottom:26px;left:var(--corner-space);right:auto;align-items:flex-start}
+.scene-caption{bottom:26px;right:var(--corner-space);left:auto;transform:none;justify-content:flex-end;flex-wrap:wrap}
+.is-model-view .model-label{opacity:1}
+.chapter,.team-section{padding:calc(var(--stage-header) + 70px) var(--corner-space) 100px;align-items:flex-start}
+.chapter-content,.hero .chapter-content,.system-section .chapter-content{width:var(--reading-column);max-width:360px}
+.hero h1{font-size:clamp(39px,3.6vw,56px)}
+.chapter h2,.team-heading h2{font-size:clamp(30px,2.5vw,40px)}
+.chapter-description,.hero-description{font-size:14px;line-height:1.65;margin-top:20px;max-width:100%}
+.hero-actions{gap:16px;margin-top:25px}
+.chapter .detail-note{font-size:10px}
+.fact-strip{gap:28px;margin-top:25px;padding-top:19px}
+.fact-strip strong{font-size:37px}
+.dual-heads{gap:14px}
+.dual-heads strong{font-size:12px}
+.dual-heads div>span:last-child{font-size:8px}
+.saliency-preview>div{grid-template-columns:110px 1fr 15px;gap:10px;font-size:10px}
+.hero-bottom{left:var(--corner-space);right:auto;bottom:110px;width:var(--reading-column);flex-direction:column;align-items:flex-start;gap:17px}
+.hero-credit{right:var(--corner-space);bottom:110px}
+.team-grid{grid-template-columns:1fr;gap:25px;margin:35px 0}
+.team-person h3{font-size:28px}
+.team-person h3 br{display:none}
+.supervisors{flex-wrap:wrap;gap:24px}
+.supervisors strong{font-size:15px}
+.end-note{flex-direction:column;align-items:flex-start;gap:18px;margin-top:45px}
+.end-note>span{font-size:25px}
+.site-footer{width:var(--reading-column);max-width:360px;margin-left:var(--corner-space);padding:30px 0 100px;flex-direction:column;align-items:flex-start;background:transparent;z-index:3}
+dialog,.is-model-view dialog{inset:calc(var(--stage-header) + 65px) auto auto var(--corner-space);width:var(--reading-column);max-width:360px;max-height:calc(100svh - var(--stage-header) - 145px);overflow-y:auto;padding:22px}
+dialog h2{font-size:30px}
+.model-controls .button{font-size:8px;padding:10px 8px}
+
+/* Text keeps its semantic copy while its visual pieces animate. */
+.text-motion-ready :is(.motion-run,.motion-visual,.motion-word,.motion-char,.motion-caption){font:inherit!important;letter-spacing:inherit!important;line-height:inherit!important;color:inherit!important;margin:0!important;padding:0!important;width:auto!important;height:auto!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.text-motion-ready :is(.motion-run,.motion-visual,.motion-caption){display:inline!important}
+.motion-visual,.motion-caption{user-select:none}
+.motion-word,.motion-char{display:inline-block!important}
+.motion-word{white-space:nowrap;perspective:650px;transform-origin:50% 80%}
+.motion-char{transform-origin:50% 85%}
+.button .motion-word,.button .motion-char,.text-link .motion-word,.text-link .motion-char{font-size:inherit;line-height:inherit}
+.motion-sr-only{position:absolute!important;width:1px!important;height:1px!important;margin:-1px!important;padding:0!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.is-decoding{color:var(--accent)}
+.motion-paused .motion-word,.motion-paused .motion-char{filter:none!important;opacity:1!important;transform:none!important}
+
+@media(max-width:1100px) and (min-width:801px){
+  :root{--reading-column:26vw;--corner-space:26px}
+  :root{--model-framing-width:42vw;--model-framing-height:70svh}
+  .hero h1{font-size:39px}
+  .chapter h2,.team-heading h2{font-size:30px}
+  .chapter-description,.hero-description{font-size:12px}
+  .chapter .detail-note{font-size:9px}
+  .button{font-size:9px;padding:12px;gap:12px}
+  .dual-heads{grid-template-columns:1fr}
+  .saliency-preview>div{grid-template-columns:86px 1fr 13px;font-size:9px}
+}
+@media(max-height:650px) and (min-width:801px){
+  :root{--stage-header:68px}
+  :root{--model-framing-height:66svh}
+  .chapter,.team-section{padding-top:125px}
+  .hero h1{font-size:39px}
+  .hero-bottom,.hero-credit{display:none}
+}
+@media(max-width:800px) and (min-height:451px){
+  :root{--stage-header:70px;--corner-space:18px;--reading-top:calc(68svh + 22px);--reading-column:100%}
+  :root{--model-framing-width:calc(100vw - 44px);--model-framing-height:36svh}
+  .story-scroll{inset:var(--reading-top) 0 0;border-top:1px solid var(--line);background:var(--bg);z-index:3}
+  .chapter,.team-section,.system-section{min-height:calc(100svh - var(--reading-top));padding:20px 22px 45px;scroll-margin-top:0}
+  .chapter-content,.hero .chapter-content,.system-section .chapter-content{width:100%;max-width:none}
+  .hero h1{font-size:clamp(30px,8vw,42px)}
+  .chapter h2,.team-heading h2{font-size:29px}
+  .chapter-description,.hero-description{font-size:12px;line-height:1.6;margin-top:14px}
+  .hero-actions{margin-top:20px;gap:16px}
+  .hero-bottom,.hero-credit{display:none}
+  .model-label,.scene-caption{font-size:7px;max-width:43%;line-height:1.6}
+  .label-top{top:84px;left:18px}
+  .label-left{top:84px;right:18px;max-width:45%}
+  .label-bottom{bottom:calc(32svh - 8px);left:18px;max-width:42%}
+  .scene-caption{bottom:calc(32svh - 8px);right:18px;max-width:45%;gap:5px}
+  .scene-stage{z-index:2}
+  .chapter-rail{top:50svh;right:3px}
+  .team-grid{gap:22px;margin:30px 0}
+  .team-person h3{font-size:25px}
+  .supervisors{gap:22px}
+  .site-footer{width:auto;max-width:none;margin:0;padding:22px;gap:14px}
+  .is-model-view .scene-stage{inset:0;height:100svh;width:100%;background:transparent}
+  .is-model-view dialog{inset:calc(var(--reading-top) + 8px) 12px auto;width:calc(100% - 24px);max-width:none;max-height:calc(100svh - var(--reading-top) - 16px);padding:16px}
+  dialog h2{font-size:25px}
+  .is-model-view .scene-stage{z-index:2}
+  .scene-fallback{inset:26% 12% auto;padding:20px;font-size:12px}
+}
+@media(max-width:800px) and (max-height:450px){
+  :root{--stage-header:70px;--corner-space:22px;--reading-column:25vw}
+  :root{--model-framing-width:42vw;--model-framing-height:64svh}
+  .chapter-content,.hero .chapter-content,.system-section .chapter-content{width:var(--reading-column)}
+  .chapter,.team-section{padding:120px var(--corner-space) 75px}
+  .hero h1{font-size:28px}
+  .chapter h2,.team-heading h2{font-size:25px}
+  .chapter-description,.hero-description{font-size:11px}
+  .fact-strip{gap:18px}
+  .dual-heads{grid-template-columns:1fr}
+  .model-label,.scene-caption{font-size:7px;max-width:29%}
+  .label-top,.label-left{top:84px}
+  .label-bottom,.scene-caption{bottom:16px}
+  .chapter-rail a{height:18px}
+  .chapter-rail b{font-size:7px;padding:6px 8px}
+  .hero-bottom,.hero-credit{display:none}
+  .site-footer{width:var(--reading-column);margin-left:var(--corner-space);padding-bottom:75px}
+  dialog,.is-model-view dialog{inset:100px auto auto var(--corner-space);width:var(--reading-column);max-height:calc(100svh - 145px);padding:14px}
+  dialog h2{font-size:22px}
+  .saliency-preview>div{grid-template-columns:66px 1fr 10px;font-size:8px;gap:5px}
+  .team-person h3{font-size:22px}
+}
+@media(prefers-reduced-motion:reduce){.motion-word,.motion-char{filter:none!important;opacity:1!important;transform:none!important}}

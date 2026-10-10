@@ -1,0 +1,613 @@
+{
+  "wheel": {
+    "wheelStart": {
+      "morph": "0.000",
+      "y": 189
+    },
+    "wheelReversed": {
+      "morph": "0.197",
+      "y": 357
+    },
+    "wheelSettled": {
+      "chapter": "0",
+      "morph": "0.076",
+      "y": 149
+    }
+  },
+  "desktop": [
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "0",
+      "current": "Introduction",
+      "hash": "#intro",
+      "labels": [
+        "core",
+        "beacon",
+        "arcs"
+      ],
+      "morph": "0.000",
+      "progress": "scaleX(0)",
+      "visited": 0,
+      "y": 0
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "1",
+      "current": "Chapter 1: A connected world",
+      "hash": "#network",
+      "labels": [
+        "network",
+        "paths",
+        "packets"
+      ],
+      "morph": "1.000",
+      "progress": "scaleX(0.111111)",
+      "visited": 1,
+      "y": 900
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "2",
+      "current": "Chapter 2: A silent intrusion",
+      "hash": "#intrusion",
+      "labels": [
+        "modbus",
+        "threat",
+        "paths"
+      ],
+      "morph": "2.000",
+      "progress": "scaleX(0.222222)",
+      "visited": 2,
+      "y": 1890
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "3",
+      "current": "Chapter 3: Detect the unexpected",
+      "hash": "#detection",
+      "labels": [
+        "input",
+        "convolution",
+        "attention"
+      ],
+      "morph": "3.000",
+      "progress": "scaleX(0.333333)",
+      "visited": 3,
+      "y": 2880
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "4",
+      "current": "Chapter 4: Make it explainable",
+      "hash": "#explanation",
+      "labels": [
+        "saliency",
+        "prediction",
+        "network"
+      ],
+      "morph": "4.000",
+      "progress": "scaleX(0.444444)",
+      "visited": 4,
+      "y": 3870
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "5",
+      "current": "Chapter 5: Respond with control",
+      "hash": "#response",
+      "labels": [
+        "shield",
+        "threat",
+        "modbus"
+      ],
+      "morph": "5.000",
+      "progress": "scaleX(0.555556)",
+      "visited": 5,
+      "y": 4860
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "6",
+      "current": "Chapter 6: Keep the evidence",
+      "hash": "#evidence",
+      "labels": [
+        "evidence",
+        "base",
+        "paths"
+      ],
+      "morph": "6.000",
+      "progress": "scaleX(0.666667)",
+      "visited": 6,
+      "y": 5850
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "7",
+      "current": "The system",
+      "hash": "#system",
+      "labels": [
+        "input",
+        "attention",
+        "prediction"
+      ],
+      "morph": "7.000",
+      "progress": "scaleX(0.777778)",
+      "visited": 7,
+      "y": 6840
+    },
+    {
+      "canvas": {
+        "bottom": 900,
+        "height": 900,
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "width": 1425,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "8",
+      "current": "The team",
+      "hash": "#team",
+      "labels": [
+        "core",
+        "lid",
+        "pins"
+      ],
+      "morph": "8.000",
+      "progress": "scaleX(0.888889)",
+      "visited": 8,
+      "y": 7830
+    }
+  ],
+  "mobile": [
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "0",
+      "current": "Introduction",
+      "hash": "#intro",
+      "labels": [
+        "core",
+        "beacon",
+        "arcs"
+      ],
+      "morph": "0.000",
+      "pane": 1,
+      "progress": "scaleX(0)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "1",
+      "current": "Chapter 1: A connected world",
+      "hash": "#network",
+      "labels": [
+        "network",
+        "paths",
+        "packets"
+      ],
+      "morph": "1.000",
+      "pane": 304,
+      "progress": "scaleX(0.111111)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "2",
+      "current": "Chapter 2: A silent intrusion",
+      "hash": "#intrusion",
+      "labels": [
+        "modbus",
+        "threat",
+        "paths"
+      ],
+      "morph": "2.000",
+      "pane": 783,
+      "progress": "scaleX(0.222164)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "3",
+      "current": "Chapter 3: Detect the unexpected",
+      "hash": "#detection",
+      "labels": [
+        "input",
+        "convolution",
+        "attention"
+      ],
+      "morph": "3.000",
+      "pane": 1213,
+      "progress": "scaleX(0.333428)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "4",
+      "current": "Chapter 4: Make it explainable",
+      "hash": "#explanation",
+      "labels": [
+        "saliency",
+        "prediction",
+        "network"
+      ],
+      "morph": "4.000",
+      "pane": 1670,
+      "progress": "scaleX(0.444327)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "5",
+      "current": "Chapter 5: Respond with control",
+      "hash": "#response",
+      "labels": [
+        "shield",
+        "threat",
+        "modbus"
+      ],
+      "morph": "5.000",
+      "pane": 2085,
+      "progress": "scaleX(0.555459)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "6",
+      "current": "Chapter 6: Keep the evidence",
+      "hash": "#evidence",
+      "labels": [
+        "evidence",
+        "base",
+        "paths"
+      ],
+      "morph": "6.000",
+      "pane": 2500,
+      "progress": "scaleX(0.666742)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "7",
+      "current": "The system",
+      "hash": "#system",
+      "labels": [
+        "input",
+        "attention",
+        "prediction"
+      ],
+      "morph": "7.000",
+      "pane": 2891,
+      "progress": "scaleX(0.777694)",
+      "windowY": 0
+    },
+    {
+      "canvas": {
+        "bottom": 844,
+        "height": 844,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "chapter": "8",
+      "current": "The team",
+      "hash": "#team",
+      "labels": [
+        "core",
+        "lid",
+        "pins"
+      ],
+      "morph": "8.000",
+      "pane": 3488,
+      "progress": "scaleX(0.888869)",
+      "windowY": 0
+    }
+  ],
+  "desktopFooter": {
+    "max": 8188,
+    "morph": "8.000",
+    "progress": "scaleX(1)",
+    "stageHidden": "false",
+    "y": 8188
+  },
+  "historyBack": {
+    "hash": "#detection",
+    "morph": "3.000",
+    "y": 2880
+  },
+  "guideJump": {
+    "focus": "component-title",
+    "hash": "#explanation",
+    "morph": "4.000",
+    "panelOpen": true,
+    "selected": "saliency",
+    "y": 3870
+  },
+  "pausedJump": {
+    "caption": "RECORD / GOVERNANCE",
+    "hash": "#evidence",
+    "morph": "6.000",
+    "paused": "true",
+    "y": 5850
+  },
+  "explorerJump": {
+    "dialogOpen": false,
+    "focus": "component-title",
+    "hash": "#explanation",
+    "morph": "4.000",
+    "selected": "saliency"
+  },
+  "mobileFooter": {
+    "max": 4197,
+    "morph": "8.000",
+    "pane": 4197,
+    "progress": "scaleX(1)",
+    "windowY": 0
+  },
+  "phoneModelWheel": {
+    "phoneWheelStart": {
+      "morph": "0.000",
+      "pane": 63,
+      "windowY": 0
+    },
+    "phoneWheelFollowing": {
+      "morph": "1.052",
+      "pane": 485,
+      "windowY": 0
+    }
+  },
+  "nativeInspector": {
+    "panelBefore": {
+      "pane": 548,
+      "panel": 0
+    },
+    "panelAfter": {
+      "pane": 548,
+      "panel": 133
+    }
+  },
+  "pausedModelWheel": {
+    "morph": "1.000",
+    "pane": 507,
+    "paused": "true",
+    "windowY": 0
+  },
+  "landscape": {
+    "canvas": {
+      "bottom": 390,
+      "height": 390,
+      "left": 0,
+      "right": 829,
+      "top": 0,
+      "width": 829,
+      "x": 0,
+      "y": 0
+    },
+    "chapter": "3",
+    "morph": "3.000",
+    "pane": 0,
+    "windowY": 2064
+  },
+  "landscapeWheel": {
+    "morph": "3.100",
+    "pane": 0,
+    "windowY": 2243
+  },
+  "resizeContinuity": [
+    {
+      "chapter": "3",
+      "height": 390,
+      "morph": "3.000",
+      "pane": 0,
+      "progress": "scaleX(0.333357)",
+      "width": 844,
+      "windowY": 2064
+    },
+    {
+      "chapter": "3",
+      "height": 800,
+      "morph": "3.000",
+      "pane": 0,
+      "progress": "scaleX(0.333333)",
+      "width": 1280,
+      "windowY": 2560
+    },
+    {
+      "chapter": "3",
+      "height": 844,
+      "morph": "3.000",
+      "pane": 1213,
+      "progress": "scaleX(0.333428)",
+      "width": 390,
+      "windowY": 0
+    }
+  ],
+  "keyboardTakeover": {
+    "tabJumpStarted": {
+      "y": 2830
+    },
+    "tabCancelled": {
+      "focus": "story-scroll",
+      "y": 2838
+    },
+    "tabStayed": {
+      "focus": "story-scroll",
+      "y": 2838
+    }
+  },
+  "desktopFooterDuringJump": {
+    "max": 8332,
+    "morph": "7.312",
+    "progress": "scaleX(1)",
+    "stageHidden": "false",
+    "y": 8332
+  },
+  "controllerChecks": {
+    "integerRoundedWheelSettle": true,
+    "fractionalWheelSettle": true,
+    "immediateDirectionReversal": true,
+    "externalNativeTakeover": true,
+    "finiteChapterJump": true,
+    "refreshDuringJump": true,
+    "pauseSnap": true,
+    "rootSwitch": true,
+    "portraitModelTouchReleaseBoundMs": 450,
+    "touchCancelNoFling": true,
+    "nativeAndModifierExclusions": true,
+    "disposeListeners": true,
+    "method": "Deterministic controller harness run by smooth_scroll agent; touch is simulated."
+  },
+  "build": "Passed npm run build",
+  "originalFiles": {
+    "checked": 31638,
+    "missing": 0,
+    "changed": 0
+  }
+}

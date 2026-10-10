@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-09",
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "mobileChapters": [
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Sentinel core",
+      "morph": "0.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 0,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Connected constellation",
+      "morph": "1.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 453,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Disrupted spiral",
+      "morph": "2.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 959,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Conformer tower",
+      "morph": "3.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 1436,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Feature landscape",
+      "morph": "4.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 1921,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Containment shield",
+      "morph": "5.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 2381,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Evidence folio",
+      "morph": "6.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 2837,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Connected architecture",
+      "morph": "7.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 3291,
+      "top": 523.28125
+    },
+    {
+      "ariaHidden": "false",
+      "bottom": 844,
+      "form": "Sentinel signature",
+      "morph": "8.000",
+      "opacity": "1",
+      "position": "fixed",
+      "scroll": 3932,
+      "top": 523.28125
+    }
+  ],
+  "checks": {
+    "modelFixedAcrossAllNineSections": true,
+    "modelVisibleAtDesktopFooter": true,
+    "modelVisibleAtMobileFooter": true,
+    "modelVisibleInExplorer": true,
+    "wheelOverDockAdvancesStory": true,
+    "keyboardEndReachesFooter": true,
+    "readingAndModelPanesDoNotOverlap": true,
+    "portraitLandscapeEndPositionPreserved": true,
+    "landscapeTextRight": 345,
+    "landscapeModelLeft": 354.66668701171875
+  },
+  "screenshots": [
+    "preview-persistent-mobile-footer.jpg",
+    "preview-persistent-desktop-footer.jpg"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-09T10:18:50.417Z",
+  "originalFiles": 31638,
+  "missing": [],
+  "changed": [],
+  "researchCopies": [
+    {
+      "name": "main_manuscript.pdf",
+      "identical": true
+    },
+    {
+      "name": "abstract.pdf",
+      "identical": true
+    }
+  ],
+  "glbBytes": 966576,
+  "build": "passed",
+  "browserChecks": {
+    "desktop": true,
+    "phoneViewport": "375x667",
+    "landscapeViewport": "667x375",
+    "chapterNavigation": true,
+    "motionControl": true,
+    "containmentFeedback": true,
+    "modelRotateAndLayers": true,
+    "blenderExport": true,
+    "consoleRuntimeErrors": 0
+  }
+}

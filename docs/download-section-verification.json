@@ -1,0 +1,218 @@
+{
+  "desktop": {
+    "active": "true",
+    "caption": "10 / 10",
+    "cards": [
+      {
+        "button": {
+          "bottom": 558.59375,
+          "height": 44,
+          "left": 58.609375,
+          "right": 292.484375,
+          "top": 514.59375,
+          "width": 233.875,
+          "x": 58.609375,
+          "y": 514.59375
+        },
+        "href": null,
+        "linkHidden": true,
+        "package": "host",
+        "pendingDisabled": true,
+        "ready": "false"
+      },
+      {
+        "button": {
+          "bottom": 558.59375,
+          "height": 44,
+          "left": 946.515625,
+          "right": 1180.390625,
+          "top": 514.59375,
+          "width": 233.875,
+          "x": 946.515625,
+          "y": 514.59375
+        },
+        "href": null,
+        "linkHidden": true,
+        "package": "client",
+        "pendingDisabled": true,
+        "ready": "false"
+      },
+      {
+        "button": {
+          "bottom": 823.59375,
+          "height": 44,
+          "left": 477.484375,
+          "right": 761.515625,
+          "top": 779.59375,
+          "width": 284.03125,
+          "x": 477.484375,
+          "y": 779.59375
+        },
+        "href": null,
+        "linkHidden": true,
+        "package": "dashboard",
+        "pendingDisabled": true,
+        "ready": "false"
+      }
+    ],
+    "height": 884,
+    "leaders": [
+      {
+        "display": "",
+        "path": "M 397.3172073896536 414.77746495627935 L 310.484375 414.77746495627935 L 292.484375 514.59375 M 292.484375 509.59375 L 292.484375 519.59375"
+      },
+      {
+        "display": "",
+        "path": "M 840.1807062481718 404.19869028675106 L 928.515625 404.19869028675106 L 946.515625 514.59375 M 946.515625 509.59375 L 946.515625 519.59375"
+      },
+      {
+        "display": "",
+        "path": "M 625.9559679528759 656.1373972267683 L 625.9559679528759 761.59375 L 625.9559679528759 779.59375 M 620.9559679528759 779.59375 L 630.9559679528759 779.59375"
+      }
+    ],
+    "morph": "9.000",
+    "width": 1254
+  },
+  "phone": {
+    "buttons": [
+      {
+        "disabled": true,
+        "label": "Host installer — release coming soon",
+        "rect": {
+          "bottom": 815.96875,
+          "height": 42,
+          "left": 35,
+          "right": 172,
+          "top": 773.96875,
+          "width": 137,
+          "x": 35,
+          "y": 773.96875
+        }
+      },
+      {
+        "disabled": true,
+        "label": "Client installer — release coming soon",
+        "rect": {
+          "bottom": 815.96875,
+          "height": 42,
+          "left": 208,
+          "right": 345,
+          "top": 773.96875,
+          "width": 137,
+          "x": 208,
+          "y": 773.96875
+        }
+      },
+      {
+        "disabled": true,
+        "label": "Dashboard launcher — release coming soon",
+        "rect": {
+          "bottom": 937.359375,
+          "height": 42,
+          "left": 35,
+          "right": 345,
+          "top": 895.359375,
+          "width": 310,
+          "x": 35,
+          "y": 895.359375
+        }
+      }
+    ],
+    "morph": "9.000",
+    "pane": 4321,
+    "paths": [
+      {
+        "d": "M 72.8405478580743 406.1748449475519 L 12 406.1748449475519 L 12 794.96875 L 35 794.96875 M 35 789.96875 L 35 799.96875",
+        "display": ""
+      },
+      {
+        "d": "M 316.56798122118016 402.0541478241246 L 378 402.0541478241246 L 378 794.96875 L 345 794.96875 M 345 789.96875 L 345 799.96875",
+        "display": ""
+      },
+      {
+        "d": null,
+        "display": "none"
+      }
+    ],
+    "readerTop": 595.90625,
+    "sectionTop": 595.828125,
+    "windowY": 0
+  },
+  "landscape": {
+    "buttons": [
+      {
+        "disabled": true,
+        "rect": {
+          "bottom": 268.59375,
+          "height": 40,
+          "left": 37,
+          "right": 200.671875,
+          "top": 228.59375,
+          "width": 163.671875,
+          "x": 37,
+          "y": 228.59375
+        }
+      },
+      {
+        "disabled": true,
+        "rect": {
+          "bottom": 268.59375,
+          "height": 40,
+          "left": 628.328125,
+          "right": 792,
+          "top": 228.59375,
+          "width": 163.671875,
+          "x": 628.328125,
+          "y": 228.59375
+        }
+      },
+      {
+        "disabled": true,
+        "rect": {
+          "bottom": 356.1875,
+          "height": 40,
+          "left": 315.78125,
+          "right": 513.21875,
+          "top": 316.1875,
+          "width": 197.4375,
+          "x": 315.78125,
+          "y": 316.1875
+        }
+      }
+    ],
+    "canvas": {
+      "bottom": 390,
+      "height": 390,
+      "left": 0,
+      "right": 829,
+      "top": 0,
+      "width": 829,
+      "x": 0,
+      "y": 0
+    },
+    "morph": "9.000"
+  },
+  "reversible": {
+    "active": "false",
+    "caption": "09 / 10",
+    "chapter": "8",
+    "morph": "8.000",
+    "visibleCallouts": [
+      "core",
+      "lid",
+      "pins"
+    ]
+  },
+  "build": "Passed",
+  "originalFiles": {
+    "checked": 31638,
+    "missing": 0,
+    "changed": 0
+  },
+  "releaseFiles": {
+    "host": null,
+    "client": null,
+    "dashboard": null,
+    "reason": "The requested installers and executable were not present in the original workspace; file paths requested from user."
+  }
+}

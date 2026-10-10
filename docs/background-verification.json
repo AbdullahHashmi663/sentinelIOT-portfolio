@@ -1,0 +1,99 @@
+{
+  "checks": [
+    {
+      "fields": [
+        {
+          "mood": "network",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "mood": "network",
+      "morph": "1.000",
+      "paused": "true",
+      "progress": "1.000",
+      "url": "#network"
+    },
+    {
+      "fields": [
+        {
+          "mood": "intrusion",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "mood": "intrusion",
+      "morph": "2.000",
+      "paused": "true",
+      "progress": "2.000",
+      "url": "#intrusion"
+    },
+    {
+      "check": "violet at full chapter",
+      "hash": "#explanation",
+      "mood": "explanation",
+      "morph": "4.000",
+      "progress": "4.000"
+    },
+    {
+      "check": "teal at full chapter",
+      "hash": "#response",
+      "mood": "response",
+      "morph": "5.000",
+      "progress": "4.993"
+    },
+    {
+      "check": "reverse scroll blend",
+      "fields": [
+        {
+          "mood": "explanation",
+          "opacity": "0.229",
+          "transform": "matrix(1, 0, 0, 1, 15.17, -9.65)"
+        },
+        {
+          "mood": "response",
+          "opacity": "0.771",
+          "transform": "matrix(1, 0, 0, 1, -6.83, 4.35)"
+        }
+      ],
+      "progress": "4.690",
+      "y": 4413
+    },
+    {
+      "check": "download finale",
+      "mood": "downloads",
+      "morph": "9.000",
+      "progress": "8.992"
+    },
+    {
+      "backdrop": {
+        "height": 844,
+        "width": 390
+      },
+      "canvas": {
+        "height": 844,
+        "width": 390
+      },
+      "check": "phone layout",
+      "height": 844,
+      "mood": "explanation",
+      "progress": "3.999",
+      "readerScroll": 1670,
+      "width": 390,
+      "windowScroll": 0
+    },
+    {
+      "check": "neutral evidence chapter",
+      "mood": "charcoal",
+      "progress": "5.997",
+      "visibleFields": []
+    }
+  ],
+  "consoleErrors": [],
+  "build": "passed",
+  "originalFiles": {
+    "checked": 31638,
+    "missing": [],
+    "changed": []
+  }
+}
