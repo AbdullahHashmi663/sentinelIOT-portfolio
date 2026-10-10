@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-10T08:24:24.622Z",
+  "source": "index.html",
+  "harness": "Node VM with deterministic clock, fake DOM, and no application module",
+  "passed": 8,
+  "failed": 0,
+  "criticalStylesPrecedeGate": true,
+  "checks": [
+    {
+      "name": "Gate hides story synchronously before application module",
+      "passed": true
+    },
+    {
+      "name": "Independent timer releases an unopened splash at exactly 2000 ms",
+      "passed": true
+    },
+    {
+      "name": "Gate starts safely before body is parsed and later releases it",
+      "passed": true
+    },
+    {
+      "name": "Deadline closes an adopted native dialog and invokes cleanup once",
+      "passed": true
+    },
+    {
+      "name": "Early ready exit cancels deadline and remains idempotent",
+      "passed": true
+    },
+    {
+      "name": "Expired gate cannot be claimed as an active initial opening",
+      "passed": true
+    },
+    {
+      "name": "BFCache pageshow releases an expired gate without waiting for a paused timer",
+      "passed": true
+    },
+    {
+      "name": "Pageshow before deadline preserves the loading gate",
+      "passed": true
+    }
+  ],
+  "productionFirstPaint": {
+    "inlineLocalCSSInHead": true,
+    "baseDesignTokensIncluded": true,
+    "noCSSImports": true,
+    "onlyRemoteFontStylesheet": true,
+    "remoteFontCSSNonBlocking": true
+  }
+}

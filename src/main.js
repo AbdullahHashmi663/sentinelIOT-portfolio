@@ -4,11 +4,13 @@ import './component-guide.css';
 import './story-motion.css';
 import './downloads.css';
 import './story-background.css';
+import './splash.css';
 import { createTextMotion } from './text-motion.js';
 import { createComponentGuide } from './component-guide.js';
 import { createStoryScroll } from './story-scroll.js';
 import { createDownloadSection } from './downloads.js';
 import { createStoryBackground } from './story-background.js';
+import { createSplash } from './splash.js';
 import { project, chapterStates } from './project.js';
 
 const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -29,6 +31,7 @@ const storyBackground=createStoryBackground({paused});
 const downloads=createDownloadSection({section:document.querySelector('#downloads'),leaders:document.querySelector('#download-leaders'),textMotion});
 const componentGuide=createComponentGuide({root:document.querySelector('#component-guide'),dialog,textMotion,onJump:id=>railLinks.find(link=>link.hash==='#'+id)?.click()});
 const storyScroller=createStoryScroll({getRoot:()=>readingPane?storyScroll:window,isEnabled:()=>!paused&&!modelOpen,isPane:()=>readingPane,onUpdate:requestUpdate});
+const welcome=createSplash({root:document.querySelector('#welcome-splash'),replayButton:document.querySelector('#splash-replay'),reducedMotion,onToggle:open=>{storyScroller.stop();storyScroller.setEnabled(!paused&&!modelOpen&&!open);}});
 const revealObserver=new IntersectionObserver(entries=>{
   for(const entry of entries){
     if(!entry.isIntersecting)continue;
@@ -39,7 +42,7 @@ const revealObserver=new IntersectionObserver(entries=>{
 },{threshold:.12});
 const textTargets='h1,h2,h3,p,a,button,strong,.incident-line .mono,.fact-strip div>span,.dual-heads div>span,.saliency-preview div>span,.small-tag,.response-flow>span,.control-tags>span,.stack-number,.person-index,.supervisors .eyebrow,.end-note>span,.hero-bottom>.mono,.scroll-hint,.hero-credit>span,.site-footer>span';
 document.querySelectorAll(textTargets).forEach(el=>{
-  if(!el.closest('.scene-stage,.chapter-rail,noscript')&&!el.matches('.skip-link'))revealObserver.observe(el);
+  if(!el.closest('.scene-stage,.chapter-rail,noscript,#welcome-splash')&&!el.matches('.skip-link'))revealObserver.observe(el);
 });
 function updateText(element,text){
   textMotion.refresh(element);
@@ -64,7 +67,7 @@ function updateMotionLabel(){
 }
 function setPaused(value){
   paused=value;storyBackground.setPaused(value);scene?.setPaused(value);
-  storyScroller.setEnabled(!value&&!modelOpen);
+  storyScroller.setEnabled(!value&&!modelOpen&&!welcome.isOpen);
   textMotion.setPaused(value);
   updateMotionLabel();
 }
@@ -181,6 +184,7 @@ function sceneFailure(){
   updateText(document.querySelector('#model-message'),'3D is unavailable in this browser. The full project story remains accessible.');
   sceneControls.forEach(b=>b.disabled=true);
   updateText(document.querySelector('#contain-status'),'The full response story is available above. 3D controls need WebGL support.');
+  welcome.ready({fallback:true});
 }
 stage.addEventListener('scene-error',()=>{scene?.dispose();scene=null;sceneFailure();});
 try{
@@ -188,6 +192,7 @@ try{
   scene=await createScene(document.querySelector('#scene-mount'),{reducedMotion:paused,modelUrl:project.modelUrl,onProgress:progress=>storyBackground.setProgress(progress),onComponents:frame=>{componentGuide.update(frame);downloads.update(frame);},onChapter:index=>{renderedChapter=index;applyChapter(index);}});
   stage.classList.add('is-ready');
   sceneControls.forEach(b=>b.disabled=false);
+  welcome.ready();
   update();
 }catch(error){
   console.warn('3D experience unavailable:',error.message);
@@ -199,7 +204,7 @@ containButton.addEventListener('click',()=>{
   updateText(document.querySelector('#contain-status'),'Demonstration complete: the boundary isolates the suspicious path while other nodes stay connected.');
 });
 function closeModel(){
-  modelOpen=false;storyBackground.setExploring(false);storyScroller.setEnabled(!paused);componentGuide.setExploring(false);scene?.explore(false);document.body.classList.remove('is-model-view');activeIndex=-1;requestUpdate();
+  modelOpen=false;storyBackground.setExploring(false);storyScroller.setEnabled(!paused&&!welcome.isOpen);componentGuide.setExploring(false);scene?.explore(false);document.body.classList.remove('is-model-view');activeIndex=-1;requestUpdate();
 }
 modelButton.addEventListener('click',()=>{
   storyScroller.stop();modelOpen=true;storyBackground.setExploring(true);storyScroller.setEnabled(false);componentGuide.setExploring(true);scene?.explore(true);document.body.classList.add('is-model-view');
@@ -244,7 +249,7 @@ exportButton.addEventListener('click',async()=>{
 });
 window.addEventListener('pagehide',event=>{
   storyScroller.stop();
-  if(event.persisted){scene?.setVisible(false);return;}
-  scene?.dispose();storyBackground.dispose();storyScroller.dispose();revealObserver.disconnect();componentGuide.dispose();downloads.dispose();textMotion.dispose();
+  if(event.persisted){welcome.suspend();scene?.setVisible(false);return;}
+  welcome.dispose();scene?.dispose();storyBackground.dispose();storyScroller.dispose();revealObserver.disconnect();componentGuide.dispose();downloads.dispose();textMotion.dispose();
 });
-window.addEventListener('pageshow',event=>{if(event.persisted){measure();update();}});
+window.addEventListener('pageshow',event=>{if(event.persisted){measure();update();welcome.resume();}});

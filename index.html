@@ -3,12 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Critical loading styles run before the application stylesheet downloads. -->
+  <style id="splash-boot-styles">
+    .splash-boot-mark{display:none}
+    html.site-booting{overflow:hidden;background:#232321;color:#f1efe8}
+    html.site-booting body{margin:0;background:#232321}
+    html.site-booting body>:not(#welcome-splash){visibility:hidden!important}
+    html.site-booting #welcome-splash{display:block!important;visibility:visible!important;position:fixed;inset:0;width:100%;height:100svh;max-width:none;max-height:none;margin:0;padding:0;border:0;z-index:2147483646;overflow:hidden;box-sizing:border-box;color:#f1efe8;background:radial-gradient(ellipse at 42% 36%,#304a3b70,transparent 55%),radial-gradient(ellipse at 88% 85%,#4b3d5738,transparent 55%),#232321;font-family:Arial,sans-serif}
+    html.site-booting #welcome-splash::backdrop{background:transparent}
+    html.site-booting .splash-atmosphere,html.site-booting .splash-phases,html.site-booting .splash-eyebrow{display:none}
+    html.site-booting .splash-frame{position:absolute;inset:22px;border:1px solid #c9d4c21c;pointer-events:none}
+    html.site-booting .splash-top{position:absolute;top:30px;left:42px;right:42px;display:flex;justify-content:space-between;align-items:center}
+    html.site-booting .splash-signature{display:flex;align-items:center;gap:12px;color:#d2d8cd;font:9px/1.7 Consolas,monospace;letter-spacing:.07em}
+    html.site-booting .splash-emblem{width:28px;height:34px;fill:none;stroke:#c0e8b1;stroke-width:1.3}
+    html.site-booting .splash-skip{min-height:44px;border:0;background:none;color:#b5b5ac;font:9px Consolas,monospace;cursor:pointer}
+    html.site-booting .splash-skip span{margin-left:12px;color:#b3df93}
+    html.site-booting .splash-boot-mark{position:absolute;top:calc(45% - 94px);left:calc(50% - 72px);width:144px;height:144px;display:grid;place-items:center;color:#c0e8b1;filter:drop-shadow(0 0 28px #b3df9340)}
+    html.site-booting .splash-boot-mark svg{width:64px;height:76px;fill:none;stroke:currentColor;stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
+    html.site-booting .splash-boot-ring{position:absolute;inset:0;border:1px solid #b3df9340;border-radius:50%;border-top-color:#c0e8b1;transform:rotate(-35deg);animation:splash-boot-orbit 1.8s ease-out both}
+    html.site-booting .splash-boot-ring::after{content:'';position:absolute;inset:11px;border:1px dashed #b3df932a;border-radius:50%}
+    html.site-booting .splash-copy{position:absolute;top:calc(45% + 76px);left:24px;right:24px;width:auto;max-width:none;text-align:center}
+    html.site-booting #splash-title{margin:0;color:#f1efe8;font:500 clamp(36px,5vw,64px)/1 Arial,sans-serif;letter-spacing:-.065em;white-space:nowrap}
+    html.site-booting .splash-word{display:inline;white-space:nowrap}html.site-booting .splash-word:last-child{margin-left:5px;color:#b3df93}
+    html.site-booting .splash-subtitle{display:block;max-width:none;margin:17px 0 0;color:#b5b5ac;font:12px/1.7 Arial,sans-serif}
+    html.site-booting .motion-sr-only{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+    html.site-booting .splash-action{position:absolute;bottom:92px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:16px}
+    html.site-booting .splash-ready{display:flex;align-items:center;gap:8px;margin:0;color:#b5b5ac;font:9px/1.5 Consolas,monospace;letter-spacing:.06em}
+    html.site-booting .splash-ready-dot{width:5px;height:5px;border-radius:50%;background:#b3df93}
+    html.site-booting .splash-load-track{width:min(250px,64vw);height:2px;overflow:hidden;background:#b3df931f}
+    html.site-booting .splash-load-track span{display:block;width:40%;height:100%;background:linear-gradient(90deg,transparent,#b3df93,transparent);animation:splash-boot-scan 1.8s ease-in-out both}
+    html.site-booting .splash-bottom{position:absolute;bottom:33px;left:42px;right:42px;display:flex;justify-content:space-between;gap:18px}
+    html.site-booting .splash-footnote{margin:0;color:#aeb6a9;font:8px/1.8 Consolas,monospace}.site-booting .splash-footnote strong{display:block;font-weight:400}.site-booting .splash-footnote:last-child{text-align:right}
+    @keyframes splash-boot-orbit{to{transform:rotate(150deg)}}@keyframes splash-boot-scan{from{transform:translateX(-100%)}to{transform:translateX(250%)}}
+    @media(max-width:600px){html.site-booting .splash-frame{inset:12px}html.site-booting .splash-top{top:22px;left:26px;right:26px}html.site-booting .splash-signature{font-size:7px}html.site-booting .splash-skip{font-size:8px}html.site-booting .splash-subtitle{font-size:10px}html.site-booting .splash-bottom{left:27px;right:27px;bottom:24px}html.site-booting .splash-footnote{font-size:7px;max-width:45%}html.site-booting .splash-action{bottom:99px}}
+    @media(max-height:550px){html.site-booting .splash-boot-mark{top:calc(42% - 72px);width:112px;height:112px;left:calc(50% - 56px)}html.site-booting .splash-boot-mark svg{width:47px;height:57px}html.site-booting .splash-copy{top:calc(42% + 53px)}html.site-booting #splash-title{font-size:36px}html.site-booting .splash-subtitle{display:none}html.site-booting .splash-action{bottom:76px}html.site-booting .splash-footnote{font-size:0;line-height:0}html.site-booting .splash-footnote strong{font:7px/1.8 Consolas,monospace}}
+    @media(prefers-reduced-motion:reduce){html.site-booting .splash-boot-ring,html.site-booting .splash-load-track span{animation:none}}
+  </style>
+  <script>
+    // This gate has no dependency on the app bundle, fonts, or Three.js.
+    (()=>{
+      const html=document.documentElement,startedAt=performance.now(),deadline=startedAt+2000;
+      let active=true,callback=null,timer;
+      html.classList.add('site-booting','splash-open');html.dataset.bootState='loading';
+      const boot=window.sentinelBoot={startedAt,deadline,get active(){return active;},claim(fn){callback=fn;return active;},finish(reason='deadline'){
+        if(!active)return;active=false;clearTimeout(timer);
+        const splash=document.getElementById('welcome-splash');
+        if(splash?.open)splash.close();if(splash)splash.hidden=true;
+        html.classList.remove('site-booting','splash-open');document.body?.classList.remove('splash-open');
+        html.dataset.bootState='complete';html.dataset.bootReason=reason;html.dataset.bootDuration=(performance.now()-startedAt).toFixed(1);
+        const finish=callback;callback=null;finish?.();
+      }};
+      timer=setTimeout(()=>boot.finish('deadline'),Math.max(0,deadline-performance.now()));
+      window.addEventListener('pageshow',()=>{if(active&&performance.now()>=deadline)boot.finish('deadline');});
+    })();
+  </script>
   <meta name="theme-color" content="#232321" />
   <meta name="description" content="Sentinel-IoT — an explainable industrial IoT security research project from Bahria University. Explore the story through an interactive 3D experience." />
   <title>Sentinel-IoT — Understand. Detect. Defend.</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700;750&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" media="print" data-portfolio-fonts onload="this.media='all';this.onload=null" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700;750&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" /></noscript>
 </head>
 <body>
+  <dialog id="welcome-splash" aria-labelledby="splash-title" aria-describedby="splash-subtitle" hidden data-no-text-motion>
+    <div class="splash-boot-mark" aria-hidden="true"><span class="splash-boot-ring"></span><svg viewBox="0 0 36 42"><path d="M18 1 34 9V29L18 41 2 29V9Z"/><path d="M25 13H12V20H24V28H11"/><path d="M18 1V-2M34 19H37M18 41V44M2 19H-1"/></svg></div>
+    <div class="splash-atmosphere" aria-hidden="true"></div>
+    <div class="splash-frame" aria-hidden="true"></div>
+    <div class="splash-top">
+      <div class="splash-signature" data-splash-reveal>
+        <svg class="splash-emblem" viewBox="0 0 36 42" aria-hidden="true"><path class="splash-emblem-outline" d="M18 1 34 9V29L18 41 2 29V9Z"/><path class="splash-emblem-mark" d="M25 13H12V20H24V28H11"/></svg>
+        <span>INTELLIGENCE, EXPLAINED.<br />SENTINEL / IOT</span>
+      </div>
+      <button class="splash-skip" type="button" data-splash-skip data-splash-reveal data-no-text-motion>Skip intro <span aria-hidden="true">↗</span></button>
+    </div>
+    <div class="splash-copy">
+      <p class="splash-eyebrow" data-splash-reveal>THE SIGNAL. THE INSIGHT. THE RESPONSE.</p>
+      <h2 id="splash-title"><span class="motion-sr-only">Sentinel-IoT</span><span class="splash-word" data-splash-word aria-hidden="true">sentinel</span><span class="splash-word" data-splash-word aria-hidden="true">iot.</span></h2>
+      <p id="splash-subtitle" class="splash-subtitle" data-splash-reveal>A clearer view of a connected world.<br />An explainable approach to industrial security.</p>
+    </div>
+    <div class="splash-phases" aria-label="Understand, detect, defend">
+      <div class="splash-phase" style="--phase-color:#b3df93" data-splash-reveal><span class="splash-phase-number">01</span><span class="splash-phase-name">Understand.</span><span class="splash-phase-line" aria-hidden="true"></span></div>
+      <div class="splash-phase" style="--phase-color:#b6a0eb" data-splash-reveal><span class="splash-phase-number">02</span><span class="splash-phase-name">Detect.</span><span class="splash-phase-line" aria-hidden="true"></span></div>
+      <div class="splash-phase" style="--phase-color:#ff7768" data-splash-reveal><span class="splash-phase-number">03</span><span class="splash-phase-name">Defend.</span><span class="splash-phase-line" aria-hidden="true"></span></div>
+    </div>
+    <div class="splash-action" data-splash-reveal>
+      <p class="splash-ready" role="status"><span class="splash-ready-dot" aria-hidden="true"></span><span data-splash-status>Preparing the Sentinel core</span></p>
+      <div class="splash-load-track" aria-hidden="true"><span></span></div>
+    </div>
+    <div class="splash-bottom">
+      <p class="splash-footnote" data-splash-reveal><strong>13 TELEMETRY DOMAINS</strong>One connected intelligence.</p>
+      <p class="splash-footnote" data-splash-reveal><strong>BAHRIA UNIVERSITY</strong>A final year research project.</p>
+    </div>
+  </dialog>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <a class="wordmark" href="#intro" aria-label="Sentinel-IoT home"><span class="brand-symbol" aria-hidden="true">S</span>sentinel<span class="wordmark-light">iot</span><span class="brand-dot" aria-hidden="true"></span></a>
@@ -193,7 +279,7 @@
     </section>
   </main>
 
-  <footer class="site-footer"><a class="wordmark" href="#intro">sentinel<span class="wordmark-light">iot</span><span class="brand-dot"></span></a><span>BAHRIA UNIVERSITY · FYP</span><a href="https://animejs.com/" target="_blank" rel="noopener">Motion inspired by Anime.js <span aria-hidden="true">↗</span></a></footer>
+  <footer class="site-footer"><a class="wordmark" href="#intro">sentinel<span class="wordmark-light">iot</span><span class="brand-dot"></span></a><span>BAHRIA UNIVERSITY · FYP</span><button class="splash-replay" id="splash-replay" type="button">Replay welcome screen <span aria-hidden="true">↗</span></button><a href="https://animejs.com/" target="_blank" rel="noopener">Motion inspired by Anime.js <span aria-hidden="true">↗</span></a></footer>
   </div>
 
   <dialog id="model-dialog" aria-labelledby="model-dialog-title">

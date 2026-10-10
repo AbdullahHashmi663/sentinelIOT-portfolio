@@ -1,0 +1,94 @@
+{
+  "normal": {
+    "boot": {
+      "bootDuration": "1069.9",
+      "bootReason": "ready",
+      "bootState": "complete"
+    },
+    "canvasCount": 1,
+    "chapter": "#intro",
+    "hidden": true,
+    "inlineStyle": false,
+    "open": false,
+    "readerTop": 0.6666666865348816,
+    "sceneReady": true
+  },
+  "slowModule": {
+    "boot": {
+      "bootDuration": "1999.5",
+      "bootReason": "deadline",
+      "bootState": "complete"
+    },
+    "headerPosition": "fixed",
+    "inlineStyles": true,
+    "pageVisibility": "visible",
+    "sceneReady": true
+  },
+  "production": {
+    "boot": {
+      "bootDuration": "1073.7",
+      "bootReason": "ready",
+      "bootState": "complete"
+    },
+    "canvasCount": 1,
+    "chapter": "#intro",
+    "hidden": true,
+    "inlineStyles": true,
+    "open": false,
+    "sceneReady": true
+  },
+  "deepLink": {
+    "boot": {
+      "bootDuration": "1079.1",
+      "bootReason": "ready",
+      "bootState": "complete"
+    },
+    "chapter": "#downloads",
+    "mount": {
+      "morph": "9.000"
+    },
+    "readerTop": 0,
+    "y": 7362.66650390625
+  },
+  "replayOpened": {
+    "locked": true,
+    "open": true
+  },
+  "replay": {
+    "duration": "1080.3",
+    "locked": false,
+    "open": false,
+    "readerTop": 0,
+    "reason": "ready",
+    "y": 7726,
+    "saved": {
+      "readerTop": 0,
+      "y": 7726
+    }
+  },
+  "mobile": {
+    "boot": {
+      "bootDuration": "1073.0",
+      "bootReason": "ready",
+      "bootState": "complete"
+    },
+    "height": 768,
+    "open": false,
+    "overflow": false,
+    "sceneReady": true,
+    "width": 390
+  },
+  "pausedReplay": {
+    "duration": "901.0",
+    "locked": false,
+    "open": false,
+    "paused": "true",
+    "readerTop": 4676,
+    "y": 0,
+    "saved": {
+      "readerTop": 4676,
+      "y": 0
+    }
+  },
+  "consoleErrors": []
+}

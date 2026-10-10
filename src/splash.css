@@ -1,0 +1,61 @@
+/* The welcome uses the persistent canvas; only its surrounding introduction fades. */
+html.splash-open{overflow:hidden;scrollbar-gutter:stable;overscroll-behavior:none}
+body.splash-open{overflow:hidden}
+.splash-open #story-scroll{overflow:hidden}
+.splash-open :is(.site-header,.chapter-rail,#story-scroll,#component-guide,#download-leaders,.scene-stage .model-label,.scene-caption,.skip-link){visibility:hidden;pointer-events:none}
+#welcome-splash{position:fixed;inset:0;width:100%;height:100svh;max-width:none;max-height:none;margin:0;padding:0;border:0;overflow:hidden;color:var(--text);background:radial-gradient(ellipse at 53% 48%,transparent 22%,#181b1b26 64%,#1519199c 100%);font-family:var(--sans);isolation:isolate;touch-action:none}
+#welcome-splash[hidden]{display:none}
+#welcome-splash::backdrop{background:transparent}
+.splash-atmosphere{position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 8% 15%,#2b706334,transparent 42%),radial-gradient(ellipse at 91% 79%,#6545772b,transparent 44%)}
+.splash-frame{position:absolute;inset:22px;border:1px solid #c9d4c218;pointer-events:none}
+.splash-frame::before,.splash-frame::after{content:'';position:absolute;width:26px;height:26px;border-color:#b3df9370;border-style:solid}
+.splash-frame::before{top:-1px;left:-1px;border-width:1px 0 0 1px}.splash-frame::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
+.splash-top{position:absolute;top:46px;left:48px;right:48px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.splash-signature{display:flex;align-items:center;gap:14px;font:10px/1.7 var(--mono);letter-spacing:.08em;color:#d2d8cd}
+.splash-emblem{width:35px;height:41px;overflow:visible;color:#c0e8b1;filter:drop-shadow(0 0 8px #b3df9350)}
+.splash-emblem-outline{fill:none;stroke:currentColor;stroke-width:1}.splash-emblem-mark{fill:none;stroke:currentColor;stroke-width:1.4;stroke-linejoin:round;stroke-linecap:round}
+.splash-skip{display:flex;gap:16px;align-items:center;min-height:44px;padding:8px 0;border:0;background:transparent;color:var(--muted);font:10px var(--mono);letter-spacing:.025em}
+.splash-skip span{font-size:18px;color:#b3df93}.splash-skip:hover{color:var(--text)}
+.splash-copy{position:absolute;left:4vw;top:34%;width:25vw;max-width:380px}
+.splash-eyebrow{font:9px/1.7 var(--mono);letter-spacing:.12em;color:#b3df93;display:flex;align-items:center;gap:10px;margin-bottom:24px}
+.splash-eyebrow::before{content:'';width:21px;height:1px;background:#b3df93}
+#splash-title{font-size:clamp(42px,5.6vw,86px);letter-spacing:-.065em;line-height:.98;font-weight:550;perspective:750px;text-wrap:initial}
+.splash-word{display:block;white-space:nowrap}.splash-word:last-child{color:#b3df93}
+.splash-letter{display:inline-block;transform-origin:50% 90%}
+.splash-subtitle{font-size:13px;line-height:1.7;color:#b7bcb2;max-width:240px;margin-top:26px}
+.splash-phases{position:absolute;right:4.2vw;top:35%;width:17vw;max-width:215px;display:grid;gap:29px}
+.splash-phase{display:grid;grid-template-columns:24px 1fr;gap:9px;align-items:baseline}
+.splash-phase-number{font:9px var(--mono);color:#9fada0}
+.splash-phase-name{font-size:clamp(19px,2.05vw,32px);letter-spacing:-.045em;font-weight:450}
+.splash-phase-line{grid-column:2;height:1px;background:linear-gradient(90deg,var(--phase-color),transparent);margin-top:2px;transform-origin:left}
+.splash-bottom{position:absolute;bottom:51px;left:48px;right:48px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.splash-footnote{font:9px/1.9 var(--mono);letter-spacing:.045em;color:#aeb6a9;max-width:240px}
+.splash-footnote strong{display:block;font-weight:400;color:#d1d9cc}
+.splash-footnote:last-child{text-align:right}
+.splash-action{position:absolute;bottom:51px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:19px;pointer-events:none}
+.splash-ready{display:flex;align-items:center;gap:9px;font:9px/1.5 var(--mono);letter-spacing:.08em;color:#aeb6a9;white-space:nowrap}
+.splash-ready-dot{width:5px;height:5px;border-radius:50%;background:#b5b5ac}
+.is-prepared .splash-ready-dot{background:#b3df93;box-shadow:0 0 12px #b3df9360}
+.splash-load-track{width:min(250px,64vw);height:2px;background:#b3df931f;overflow:hidden}.splash-load-track span{display:block;width:40%;height:100%;background:linear-gradient(90deg,transparent,#b3df93,transparent);animation:splash-loading-scan 1.8s ease-in-out both}
+@keyframes splash-loading-scan{from{transform:translateX(-100%)}to{transform:translateX(250%)}}
+.motion-paused .splash-load-track span{animation:none}
+.splash-enter{min-height:56px;min-width:252px;display:flex;justify-content:space-between;align-items:center;gap:30px;padding:17px 24px;border:1px solid #b3df9360;border-radius:2px;background:#b3df93;color:#1e2923;font:10px var(--mono);letter-spacing:.035em;box-shadow:0 0 32px #b3df9312;transition:background .2s,box-shadow .2s;pointer-events:auto}
+.splash-enter span{font-size:21px;line-height:1}.splash-enter:hover{background:#d1f5b9;box-shadow:0 0 40px #b3df9328}
+.splash-enter:focus-visible,.splash-skip:focus-visible{outline:2px solid #e4f7d3;outline-offset:6px}
+.splash-replay{border:0;border-bottom:1px solid var(--line);padding:10px 0;background:transparent;color:var(--muted);font:10px var(--mono)}.splash-replay:hover{color:var(--text)}
+@media(max-width:1000px) and (min-width:801px){.splash-top,.splash-bottom{left:35px;right:35px}.splash-copy{left:35px;width:25vw}.splash-subtitle{font-size:12px}.splash-phases{right:35px}.splash-footnote{max-width:200px;font-size:8px}.splash-enter{min-width:225px}}
+@media(max-width:800px) and (min-height:451px){
+  html.splash-open{scrollbar-gutter:auto}
+  .splash-frame{inset:12px}.splash-top{top:27px;left:26px;right:26px}.splash-signature{font-size:7px;gap:10px}.splash-emblem{width:26px;height:31px}.splash-skip{font-size:8px;gap:8px}
+  .splash-copy{top:105px;left:22px;right:22px;width:auto;max-width:none;text-align:center}.splash-eyebrow{justify-content:center;font-size:7px;margin-bottom:12px}.splash-eyebrow::before{width:14px}
+  #splash-title{font-size:clamp(36px,10.5vw,64px)}.splash-word{display:inline}.splash-word:last-child{margin-left:5px}.splash-subtitle{font-size:10px;max-width:none;margin-top:13px}
+  .splash-phases{top:70%;left:27px;right:27px;width:auto;max-width:none;display:flex;justify-content:space-between;gap:15px}.splash-phase{grid-template-columns:14px 1fr;gap:5px}.splash-phase-number{font-size:7px}.splash-phase-name{font-size:clamp(12px,3.8vw,15px)}.splash-phase-line{margin-top:5px}
+  .splash-action{bottom:100px;gap:15px}.splash-enter{min-width:246px;min-height:53px}.splash-ready{font-size:8px}.splash-bottom{bottom:30px;left:27px;right:27px;gap:15px}.splash-footnote{font-size:7px;max-width:150px}.splash-footnote:last-child{max-width:130px}
+}
+@media(max-width:800px) and (min-height:451px) and (max-height:650px){
+  .splash-top{top:23px}.splash-copy{top:76px}.splash-eyebrow{margin-bottom:9px;font-size:6px}#splash-title{font-size:clamp(32px,9.5vw,43px)}.splash-subtitle{display:none}
+  .splash-ready{display:none}.splash-action{bottom:58px}.splash-enter{min-height:48px;padding:12px 20px}.splash-bottom{bottom:22px}.splash-footnote{font-size:0;line-height:0}.splash-footnote strong{font:7px/1.9 var(--mono)}
+}
+@media(max-height:620px) and (min-width:801px){.splash-top{top:32px}.splash-copy{top:31%}.splash-eyebrow{margin-bottom:15px}#splash-title{font-size:clamp(39px,5vw,64px)}.splash-subtitle{margin-top:18px}.splash-phases{top:31%;gap:20px}.splash-bottom,.splash-action{bottom:34px}.splash-action{gap:12px}}
+@media(max-height:450px){.splash-frame{inset:10px}.splash-top{top:18px;left:27px;right:27px}.splash-signature{font-size:8px}.splash-emblem{width:25px;height:29px}.splash-copy{left:28px;top:29%;width:25vw}.splash-eyebrow{font-size:7px;margin-bottom:12px}#splash-title{font-size:clamp(30px,5.4vw,49px)}.splash-subtitle{font-size:10px;margin-top:12px}.splash-phases{top:31%;right:28px;gap:17px}.splash-phase-name{font-size:18px}.splash-bottom{bottom:22px;left:28px;right:28px}.splash-footnote{font-size:7px;max-width:180px}.splash-action{bottom:22px;gap:8px}.splash-ready{font-size:7px}.splash-enter{min-height:43px;min-width:206px;padding:10px 16px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.splash-load-track span{animation:none}.splash-enter{transition:none}.splash-letter{transform:none!important;opacity:1!important}}

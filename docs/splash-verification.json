@@ -1,0 +1,125 @@
+{
+  "checks": [
+    {
+      "button": {
+        "right": 758.3333435058594,
+        "x": 506.3333435058594
+      },
+      "check": "first visit",
+      "dialog": {
+        "height": 720,
+        "width": 1264.666748046875
+      },
+      "morph": "0.000",
+      "open": true,
+      "reader": 0,
+      "ready": "Experience ready",
+      "y": 0
+    },
+    {
+      "check": "scroll locked",
+      "morph": "0.000",
+      "reader": 0,
+      "y": 0
+    },
+    {
+      "check": "reload before entering retains welcome",
+      "open": true
+    },
+    {
+      "button": {
+        "bottom": 510,
+        "height": 48,
+        "left": 37,
+        "right": 283,
+        "top": 462,
+        "width": 246,
+        "x": 37,
+        "y": 462
+      },
+      "check": "short phone layout",
+      "footer": {
+        "bottom": 546.0000410079956,
+        "height": 13.291666984558104,
+        "left": 27,
+        "right": 293,
+        "top": 532.7083740234375,
+        "width": 266,
+        "x": 27,
+        "y": 532.7083740234375
+      },
+      "height": 568,
+      "modelFraming": {
+        "bottom": 386.2395935058594,
+        "height": 204.4791717529297,
+        "left": 22,
+        "right": 298,
+        "top": 181.7604217529297,
+        "width": 276,
+        "x": 22,
+        "y": 181.7604217529297
+      },
+      "width": 320
+    },
+    {
+      "canvas": {
+        "bottom": 768,
+        "height": 768,
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "width": 390,
+        "x": 0,
+        "y": 0
+      },
+      "check": "enter opens story",
+      "modelVisible": "visible",
+      "morph": "0.000",
+      "reader": 0.6666666865348816,
+      "rootLocked": false,
+      "welcomeOpen": false,
+      "y": 0
+    },
+    {
+      "check": "dismissed welcome stays closed on reload",
+      "hidden": true,
+      "open": false
+    },
+    {
+      "check": "replay and Escape preserve story position",
+      "before": {
+        "hash": "#downloads",
+        "reader": 4676,
+        "y": 0
+      },
+      "after": {
+        "hash": "#downloads",
+        "locked": false,
+        "open": false,
+        "reader": 4676,
+        "y": 0
+      }
+    },
+    {
+      "check": "paused welcome and instant skip",
+      "before": {
+        "letterOpacity": "1",
+        "letterTransform": "none",
+        "open": true,
+        "paused": "true"
+      },
+      "after": {
+        "locked": false,
+        "open": false,
+        "paused": "true"
+      }
+    }
+  ],
+  "consoleErrors": [],
+  "build": "passed",
+  "originalFiles": {
+    "checked": 31638,
+    "missing": [],
+    "changed": []
+  }
+}
