@@ -4,6 +4,7 @@
 ### *Understand. Detect. Defend.*
 **An Interactive 3D Web Experience & Research Showcase for Explainable Industrial IoT Security**
 
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://sentinelportfolio.vercel.app)
 [![Vite](https://img.shields.io/badge/Vite-8.3.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Three.js](https://img.shields.io/badge/Three.js-r186-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 [![Anime.js](https://img.shields.io/badge/Anime.js-v4.5-FF4B4B?style=for-the-badge)](https://animejs.com/)
@@ -11,6 +12,10 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Bahria University](https://img.shields.io/badge/Bahria%20University-FYP-003366?style=for-the-badge)](https://bahria.edu.pk/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+<br />
+
+### 🌐 [**View Live Deployment: sentinelportfolio.vercel.app**](https://sentinelportfolio.vercel.app)
 
 <br />
 
